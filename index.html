@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rebirth Champions - Prototyp</title>
+  <style>
+    body { font-family: Arial; text-align: center; background: #f0f0f0; padding: 20px; }
+    .button { padding: 10px 20px; margin: 10px; font-size: 18px; border: none; border-radius: 5px; cursor: pointer; }
+    .click { background: #4caf50; color: white; }
+    .rebirth { background: #ff9800; color: white; }
+    .egg { background: #2196f3; color: white; }
+    .removeSaves { background: #a326c2; color:white; }
+  </style>
+</head>
+<body>
+  <h1>Rebirth Champions Clone</h1>
+  <p><strong>Punkty:</strong> <span id="points">0</span></p>
+  <p><strong>Zarabianie:</strong> <span id="earning">1</span>/klik</p>
+  <p><strong>Rebirth Level:</strong> <span id="rebirthLevel">0</span></p>
+
+  <button class="button click" id="clickBtn">Kliknij</button><br>
+  <button class="button rebirth" id="rebirthBtn">Rebirth (<span id="rebirthCost">10</span> pkt)</button><br>
+
+  <h3>Jajka</h3>
+  <button class="button egg" id="egg1Btn">Jajko 1 (<span id="egg1Cost">10</span>)</button>
+  <button class="button egg" id="egg2Btn">Jajko 2 (<span id="egg2Cost">20</span>)</button>
+  <p id="eggResult"></p>
+  <br><br><br><br><br><button class="button removeSaves" onclick="remove()">Wyczyść dane zapisu (Po odświeżeniu)</button>
+  <script src="dzawaskript.js"></script>
+</body>
+</html>
