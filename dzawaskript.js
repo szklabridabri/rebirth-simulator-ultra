@@ -43,7 +43,7 @@
     }
 
     function getScaledCost(baseCost) {
-      return Math.floor(baseCost * Math.pow(getTotalEarning() * 1.1, difficultyFactor));
+      return Math.floor(baseCost * Math.pow(getTotalEarning(), difficultyFactor));
     }
 
     // Aktualizacja UI
